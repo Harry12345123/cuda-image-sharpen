@@ -39,3 +39,36 @@ CUDA, Image Sharpening, GPU Filtering, Image Enhancement, C++, OpenCV
 ## Author
 
 Harry12345123
+
+## Requirements
+
+Before building this project, make sure your system has:
+
+- CUDA Toolkit
+- OpenCV
+- CMake 3.18 or later
+- C++17 compatible compiler
+
+## Build
+
+Use the following commands to compile the project:
+
+```bash
+mkdir build
+cd build
+cmake ..
+make -j
+
+Run
+
+After building, run the program with:
+
+./cuda_image_sharpen input.jpg
+
+Notes
+Make sure input.jpg exists in the project root directory.
+You can replace the input file with your own image.
+The executable name depends on your CMake project configuration.
+
+
+
