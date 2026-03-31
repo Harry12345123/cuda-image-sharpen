@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.18)
+project(cuda_image_sharpen LANGUAGES CXX CUDA)
+set(CMAKE_CXX_STANDARD 17)
+find_package(OpenCV REQUIRED)
+add_executable(cuda_image_sharpen main.cpp kernel.cu)
+target_include_directories(cuda_image_sharpen PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(cuda_image_sharpen PRIVATE ${OpenCV_LIBS})
